@@ -16,6 +16,8 @@ body{
     margin: auto;
     padding: 33px;
     width: 804px;
+    background-color: #fff;
+    border-radius: 5px;
 }
 
 :root{
@@ -25,6 +27,7 @@ body{
 a{
     text-decoration: none;
     color: var(--brand-color);
+    font-size: 16px;
 }
 
 h1{
@@ -62,6 +65,7 @@ header .container{
     padding: 18px 0;
     width: 90%;
     max-width: 870px;
+    background-color: transparent;
 }
 
 .brand-logo{
@@ -112,11 +116,9 @@ nav ul li a img{
 /* ======================== 
 Style For Top Main Section 
 ===========================*/
-main{
-    background-color: #fff;
-    border-radius: 5px;
+main > .container{
+    margin-bottom: 17px;
 }
-
 /* Style Top Player */
 .top-players{
     margin-top: 40px;
@@ -155,7 +157,25 @@ main{
     margin-right: 16px;
 }
 
-.blog-info{
+/* Style Course Section */
+.top-courses{
+    margin-top: 24px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.course{
+    width: 231px;
+    height: 248px;
+    padding: 11px;
+    box-shadow: 5px 10px 8px 8px rgba(0, 0, 0, 0.05);
+    border-radius: 5px;
+}
+
+.course img{
+    width: 224px;
+    height: 104px;
 }
 
 /* Medis Query For Diffrent Screen */
@@ -171,13 +191,16 @@ main{
     .top-blogs{
         grid-template-columns: repeat(1, 1fr);
     }
+
+    .course{
+        margin-top: 25px;
+    }
 }
 
 @media only screen and (max-width: 480px) {
     header .container{
-        flex-wrap: wrap;
-        justify-content: center;
-        width: 100%;
+        flex-direction: column;
+        align-items: center;
     }
 
     .top-players{
@@ -186,6 +209,10 @@ main{
 
     .blog{
         flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .top-courses{
         justify-content: center;
     }
 }
