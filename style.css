@@ -1,5 +1,6 @@
 /* Import Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
 
 /* Common Style */
 *{
@@ -28,6 +29,7 @@ a{
     text-decoration: none;
     color: var(--brand-color);
     font-size: 16px;
+    font-weight: 400;
 }
 
 h1{
@@ -176,6 +178,56 @@ main > .container{
 .course img{
     width: 224px;
     height: 104px;
+}
+
+.course h2,small{
+    font-family: 'Roboto', sans-serif;
+}
+
+.course h2{
+    margin-top: 5px;
+    color: #1E1E1E;
+    line-height: 24px;
+}
+
+.course small{
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+}
+
+.fa-star{
+    font-size: 12px;
+    color: #AEAEAE;
+}
+
+.fas.fa-star.rated{
+    color: #FFC014;
+}
+
+.rating{
+    margin: 10px 0;
+}
+
+.rating small{
+    color: #A2A2A2;
+    margin-left: 10px;
+
+}
+
+.course-duration{
+    float: right;
+    background-color:#FEE5DF;
+    padding: 4px;
+    border-radius: 14px;
+}
+
+.course-duration small, .fa-clock{
+    color: #ED6B4F;
+}
+
+.course-duration small{
+    margin-left: 5px;
 }
 
 /* Medis Query For Diffrent Screen */
